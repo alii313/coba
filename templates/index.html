@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.mousewheel.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery-ui.custom.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='RScompiler.3.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='RSrun.3.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='compiler.3.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='glow.3.2.min.js') }}"></script>
+    <title>Project GRAFKOM</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #0F2027, #203A43, #2C5364);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .vpython_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Tugas Akhir Grafika Komputer</h1>
+    <h2>220411100023 Ali Ridho</h2>
+    <div class="vpython_container">
+        <div id="glowscript" class="glowscript"></div>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
